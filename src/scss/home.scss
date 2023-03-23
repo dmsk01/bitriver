@@ -296,4 +296,29 @@
     flex: 1 1 auto;
   }
 }
+
+.faq-home {
+  padding: 60px 0 50px;
+  background: #fff;
+  color: $bgColor;
+  @media (max-width: $mobile) {
+    padding: 40px 0 30px;
+  }
+  &__container {
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__accordion {
+  }
+}
+.spollers {
+  &__item {
+  }
+  &__title {
+  }
+  &__body {
+  }
+}
 //====================================================================================================

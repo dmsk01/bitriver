@@ -3,57 +3,75 @@
 
 // Блок со спойлерами
 .spollers {
-	display: grid;
-	gap: 15px;
 }
 // Спойлер
 .spollers__item {
-	font-size: rem(20);
-	&:not(:last-child) {
-		margin-bottom: em(30, 20);
-	}
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  &:first-child {
+    border-top-color: transparent;
+  }
+  &:last-child {
+    border-bottom-color: transparent;
+  }
+  @media (max-width: $mobile) {
+    padding: 10px 0;
+  }
 }
 // Заголовок спойлера
 .spollers__title {
-	width: 100%;
-	cursor: default;
-	text-align: left;
-	border: 1px solid #eee;
-	padding: rem(10) rem(15);
-	border-radius: rem(5);
-	position: relative;
-	._spoller-init & {
-		cursor: pointer;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
-		}
-		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
-			}
-		}
-	}
+  position: relative;
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  font-size: 30px;
+  line-height: 52px;
+  padding-right: 40px;
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  ._spoller-init & {
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      transition: all 0.3s ease 0s;
+    }
+    &::before {
+      opacity: 1;
+      transform: rotate(90deg);
+      background: url("../img/icons/plus.svg"), no-repeat;
+    }
+    &::after {
+      opacity: 0;
+      background: url("../img/icons/minus.svg"), no-repeat;
+    }
+    &._spoller-active {
+      &::before {
+        opacity: 0;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
 }
 // Контент спойлера
 .spollers__body {
-	padding: rem(20);
-	border-radius: rem(5);
-	border: 1px solid #eee;
+  max-width: 590px;
+  @media (max-width: $mobile) {
+    padding-top: 10px;
+  }
 }
