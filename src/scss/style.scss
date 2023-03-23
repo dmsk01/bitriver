@@ -153,6 +153,19 @@ body {
   min-width: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .title {
   &_big {
     font-size: 50px;
@@ -169,5 +182,28 @@ body {
     @media (max-width: $mobileSmall) {
       font-size: 20px;
     }
+  }
+}
+
+.title-h2 {
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 700;
+  &_blue {
+    color: $blueColor;
+  }
+  @media (max-width: $mobile) {
+    font-size: 40px;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 24px;
+  }
+}
+.title-h3 {
+  font-size: 20px;
+  line-height: math.div(26, 20);
+  font-weight: 700;
+  @media (max-width: $mobileSmall) {
+    font-size: 18px;
   }
 }

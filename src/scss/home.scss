@@ -1,3 +1,168 @@
 //====================================================================================================
+.home-page {
+  &__advantages {
+  }
+  &__statistic {
+  }
+  &__company-advantage {
+  }
+}
+.advantages-home {
+  padding: 48px 0 38px;
+  background: $blueColor;
+  &__container {
+  }
+  &__row {
+    display: flex;
+    margin: 0 -15px;
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    flex: 0 1 25%;
+    padding: 0 15px;
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $mobile) {
+      flex: 1 1 100%;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__card {
+  }
+}
+.adv-card {
+  &__image-ibg {
+    margin-bottom: 20px;
+    padding-bottom: percent(206, 310);
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 10px;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: math.div(21, 17);
+    @media (max-width: $mobileSmall) {
+      font-size: 14px;
+    }
+  }
+}
 
+.statistic-home {
+  padding: 90px 0;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+  &__container {
+  }
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    @media (max-width: $pc) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    flex: 0 1 265px;
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+    @media (max-width: $pc) {
+      flex: 0 1 50%;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+      &:not(:nth-child(2n)) {
+        margin-right: 30;
+      }
+    }
+    @media (max-width: $mobile) {
+      flex: 1 1 100%;
+      &:not(:nth-child(2n)) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__number {
+    color: $blueColor;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    @media (max-width: $mobile) {
+      font-size: 36px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+  }
+  &__desctiption {
+  }
+}
+
+.company-advantage {
+  padding: 78px 0 71px;
+  background: #fff;
+  color: $bgColor;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+  &__container {
+    max-width: 1180px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  &__decor {
+    flex: 0 1 calc(530 / 1330 * 100%);
+    margin-right: 15px;
+    @media (max-width: $mobile) {
+      flex: 1 1 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__image-ibg {
+    padding-bottom: percent(360, 531);
+  }
+  &__content {
+    flex: 0 1 calc(470 / 1330 * 100%);
+  }
+  &__title {
+    margin-bottom: 36px;
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: math.div(26, 17);
+    font-weight: 300;
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 14px;
+    }
+  }
+  &__more {
+    color: $blueColor;
+  }
+}
 //====================================================================================================

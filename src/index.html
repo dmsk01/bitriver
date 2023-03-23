@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Главная" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
+@@include('html/_head.htm',{ "title":"Главная" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page home-page">
+      <section class="home-page__hero">
         @@include('html/_gradientHero.htm',{})
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    <!-- @@include('html/_popup.htm',{}) -->
-    @@include('html/_js.htm',{})
-  </body>
+      </section>
+      <section class="home-page__advantages advantages-home">
+        <h2 class="advantages-home__title visually-hidden">Преимущества компании</h2>
+        <div class="advantages-home__container">
+          <ul class="advantages-home__row">
+            <li class="advantages-home__item">
+              <article class="advantages-home__card adv-card">
+                <div class="adv-card__image-ibg">
+                  <img src="img/home/advantages/1.png" alt="advantage">
+                </div>
+                <h3 class="adv-card__title title-h3">Надежность и безопасность</h3>
+                <p class="adv-card__text">
+                  Компания BitRiver основана в 2017 году и на данный момент является одним из лидеров мировой индустрии
+                  ЦОДов и промышленного майнинга.
+                </p>
+              </article>
+            </li>
+            <li class="advantages-home__item">
+              <article class="advantages-home__card adv-card">
+                <div class="adv-card__image-ibg">
+                  <img src="img/home/advantages/2.png" alt="advantage">
+                </div>
+                <h3 class="adv-card__title title-h3">Высокотехнологичные дата-центры</h3>
+                <p class="adv-card__text">
+                  ЦОДы BitRiver находятся в энергоизбыточных регионах России и являются IT-кластерами нового
+                  технологического уклада в соответствии с целями развития цифровой экономики РФ.
+                </p>
+              </article>
+            </li>
+            <li class="advantages-home__item">
+              <article class="advantages-home__card adv-card">
+                <div class="adv-card__image-ibg">
+                  <img src="img/home/advantages/3.png" alt="advantage">
+                </div>
+                <h3 class="adv-card__title title-h3">Дешевая электроэнергия</h3>
+                <p class="adv-card__text">
+                  Мы работаем в регионах России с одними из самых низких цен на электроэнергию в мире. Собственная
+                  энергосбытовая компания минимизирует сбытовую наценку.
+                </p>
+              </article>
+            </li>
+            <li class="advantages-home__item">
+              <article class="advantages-home__card adv-card">
+                <div class="adv-card__image-ibg">
+                  <img src="img/home/advantages/4.png" alt="advantage">
+                </div>
+                <h3 class="adv-card__title title-h3">Продажа и доставка оборудования</h3>
+                <p class="adv-card__text">
+                  Мы работаем как с розничными, так и с оптовыми клиентами и способны удовлетворить спрос на поставку
+                  любых партий оборудования. При больших объёмах действуют спецусловия.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="home-page__statistic statistic-home">
+        <h2 class="statistic-home__title visually-hidden">Статистика компании</h2>
+        <div class="statistic-home__container">
+          <ul class="statistic-home__row">
+            <li class="statistic-home__item">
+              <h3 class="statistic-home__number">9</h3>
+              <p class="statistic-home__desctiption title-h3">собственных, построенных с нуля ЦОДов</p>
+            </li>
+            <li class="statistic-home__item">
+              <h3 class="statistic-home__number">&gt;300МВт</h3>
+              <p class="statistic-home__desctiption title-h3">совокупная потребляемая мощность ЦОДов</p>
+            </li>
+            <li class="statistic-home__item">
+              <h3 class="statistic-home__number">&gt;100тыс.</h3>
+              <p class="statistic-home__desctiption title-h3">единиц размещённого оборудования</p>
+            </li>
+            <li class="statistic-home__item">
+              <h3 class="statistic-home__number">8</h3>
+              <p class="statistic-home__desctiption title-h3">строящихся ЦОДов общей мощностью >930 МВт</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="home-page__company-advantage company-advantage">
+        <div class="company-advantage__container">
+          <div class="company-advantage__row">
+            <div class="company-advantage__decor">
+              <div class="company-advantage__image-ibg">
+                <img src="img/home/advantages/5.png" alt="flags">
+              </div>
+            </div>
+            <div class="company-advantage__content">
+              <h2 class="company-advantage__title title-h2 title-h2_blue">Преимущества BitRiver</h2>
+              <p class="company-advantage__text">Мы нацелены на долгосрочную работу с нашими клиентами, а масштабность и
+                технологичность наших дата-центров этому способствуют. Наши дата-центры способны удовлетворить
+                потребности в вычислительных и энергетических мощностях практически любого уровня. Мы размещаем и
+                обслуживаем оборудование клиентов по договору. Электричество приобретаем на оптовом рынке.</p>
+              <a href="#" class="company-advantage__more button button_blue">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  <!-- @@include('html/_popup.htm',{}) -->
+  @@include('html/_js.htm',{})
+</body>
+
 </html>
