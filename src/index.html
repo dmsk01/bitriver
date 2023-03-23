@@ -19,7 +19,7 @@
                   <img src="img/home/advantages/1.png" alt="advantage">
                 </div>
                 <h3 class="adv-card__title title-h3">Надежность и безопасность</h3>
-                <p class="adv-card__text">
+                <p class="adv-card__text text">
                   Компания BitRiver основана в 2017 году и на данный момент является одним из лидеров мировой индустрии
                   ЦОДов и промышленного майнинга.
                 </p>
@@ -30,8 +30,8 @@
                 <div class="adv-card__image-ibg">
                   <img src="img/home/advantages/2.png" alt="advantage">
                 </div>
-                <h3 class="adv-card__title title-h3">Высокотехнологичные дата-центры</h3>
-                <p class="adv-card__text">
+                <h3 class="adv-card__title title-h3">Высокотехнологичные <br>дата-центры</h3>
+                <p class="adv-card__text text">
                   ЦОДы BitRiver находятся в энергоизбыточных регионах России и являются IT-кластерами нового
                   технологического уклада в соответствии с целями развития цифровой экономики РФ.
                 </p>
@@ -43,7 +43,7 @@
                   <img src="img/home/advantages/3.png" alt="advantage">
                 </div>
                 <h3 class="adv-card__title title-h3">Дешевая электроэнергия</h3>
-                <p class="adv-card__text">
+                <p class="adv-card__text text">
                   Мы работаем в регионах России с одними из самых низких цен на электроэнергию в мире. Собственная
                   энергосбытовая компания минимизирует сбытовую наценку.
                 </p>
@@ -55,7 +55,7 @@
                   <img src="img/home/advantages/4.png" alt="advantage">
                 </div>
                 <h3 class="adv-card__title title-h3">Продажа и доставка оборудования</h3>
-                <p class="adv-card__text">
+                <p class="adv-card__text text">
                   Мы работаем как с розничными, так и с оптовыми клиентами и способны удовлетворить спрос на поставку
                   любых партий оборудования. При больших объёмах действуют спецусловия.
                 </p>
@@ -106,7 +106,21 @@
           </div>
         </div>
       </section>
-
+      <div class="home-page__hosting hosting-home">
+        <div class="hosting-home__container">
+          <div class="hosting-home__inner">
+            <h2 class="hosting-home__title title-h2">Хостинг</h2>
+            <p class="hosting-home__info text">На карте размещены все центры обработки данных, входящие в Bitriver
+              и доступные для работы.</p>
+            <p class="hosting-home__info text">Сервисный центр, расположенный
+              в г. Братск также отмечен на карте
+              для удобства клиентов при планировании.</p>
+          </div>
+        </div>
+        <div class="hosting-home__map">
+          @@include('html/_map.htm',{})
+        </div>
+      </div>
 
     </main>
     @@include('html/_footer.htm',{})

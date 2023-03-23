@@ -1,0 +1,13 @@
+.country-map {
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+}
+
+.geo-pointer {
+  transition: fill 0.3s ease 0s;
+  &:hover {
+    fill: $accentColorLight;
+    cursor: pointer;
+  }
+}

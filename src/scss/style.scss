@@ -147,6 +147,7 @@ body {
 // Подключение стилей отдельных страниц
 @import "home";
 @import "gradientHero";
+@import "map";
 
 // Основной блок страницы ====================================================================================================
 .page {
@@ -205,5 +206,55 @@ body {
   font-weight: 700;
   @media (max-width: $mobileSmall) {
     font-size: 18px;
+  }
+}
+
+.text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: math.div(21, 17);
+  @media (max-width: $mobileSmall) {
+    font-size: 14px;
+  }
+}
+
+.tip {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 200px;
+  background: rgba(255, 255, 255, 0.7);
+  &__box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: math.div(20, 16);
+    margin-bottom: 10px;
+    color: $bgColor;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 12px;
+    text-align: left;
+    color: #0b1d2f;
+  }
+}
+
+*[id^="tippy-"] {
+  pointer-events: unset;
+}
+
+[data-tippy-empty="true"] {
+  transition: fill 0.3s ease 0s;
+  outline: none;
+  &:hover {
+    fill: #72bdee;
+  }
+  &:active {
+    outline: none;
   }
 }

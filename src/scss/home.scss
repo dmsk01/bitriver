@@ -6,6 +6,8 @@
   }
   &__company-advantage {
   }
+  &__hosting {
+  }
 }
 .advantages-home {
   padding: 48px 0 38px;
@@ -48,12 +50,6 @@
     margin-bottom: 10px;
   }
   &__text {
-    font-weight: 300;
-    font-size: 17px;
-    line-height: math.div(21, 17);
-    @media (max-width: $mobileSmall) {
-      font-size: 14px;
-    }
   }
 }
 
@@ -163,6 +159,42 @@
   }
   &__more {
     color: $blueColor;
+  }
+}
+
+.hosting-home {
+  position: relative;
+  background: #fff;
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background: $blueColor;
+  }
+  padding: 70px 0 60px;
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__title {
+    margin-right: 100px;
+  }
+  &__info {
+    &:nth-child(2) {
+      flex: 0 0 290px;
+      margin-right: 40px;
+    }
+    &:nth-child(3) {
+      flex: 0 0 330px;
+    }
   }
 }
 //====================================================================================================
