@@ -174,6 +174,9 @@
     width: 100%;
     height: 600px;
     background: $blueColor;
+    @media (max-width: $mobile) {
+      height: 350px;
+    }
   }
   padding: 70px 0 60px;
   &__container {
@@ -183,9 +186,17 @@
   &__inner {
     display: flex;
     align-items: flex-end;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: start;
+    }
   }
   &__title {
     margin-right: 100px;
+    @media (max-width: $tablet) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
   }
   &__info {
     &:nth-child(2) {
@@ -194,6 +205,13 @@
     }
     &:nth-child(3) {
       flex: 0 0 330px;
+    }
+    @media (max-width: $tablet) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+      }
     }
   }
 }
