@@ -9,6 +9,7 @@
       <section class="home-page__hero">
         @@include('html/_gradientHero.htm',{})
       </section>
+
       <section class="home-page__advantages advantages-home">
         <h2 class="advantages-home__title visually-hidden">Преимущества компании</h2>
         <div class="advantages-home__container">
@@ -64,6 +65,7 @@
           </ul>
         </div>
       </section>
+
       <section class="home-page__statistic statistic-home">
         <h2 class="statistic-home__title visually-hidden">Статистика компании</h2>
         <div class="statistic-home__container">
@@ -87,6 +89,7 @@
           </ul>
         </div>
       </section>
+
       <section class="home-page__company-advantage company-advantage">
         <div class="company-advantage__container">
           <div class="company-advantage__row">
@@ -101,12 +104,13 @@
                 технологичность наших дата-центров этому способствуют. Наши дата-центры способны удовлетворить
                 потребности в вычислительных и энергетических мощностях практически любого уровня. Мы размещаем и
                 обслуживаем оборудование клиентов по договору. Электричество приобретаем на оптовом рынке.</p>
-              <a href="#" class="company-advantage__more button button_blue">ПОДРОБНЕЕ</a>
+              <a href="#" class="company-advantage__more button button_min button_blue">ПОДРОБНЕЕ</a>
             </div>
           </div>
         </div>
       </section>
-      <div class="home-page__hosting hosting-home">
+
+      <section class="home-page__hosting hosting-home">
         <div class="hosting-home__container">
           <div class="hosting-home__inner">
             <h2 class="hosting-home__title title-h2">Хостинг</h2>
@@ -120,7 +124,47 @@
         <div class="hosting-home__map">
           @@include('html/_map.htm',{})
         </div>
-      </div>
+      </section>
+
+      <section class="hosting-home__sell sell-home">
+        <div class="sell-home__container">
+          <div class="sell-home__row">
+            <div class="sell-home__content">
+              <h2 class="sell-home__title title-h2">Продажа оборудования</h2>
+              <p class="sell-home__text">
+                Мы работаем напрямую с ведущими мировыми производителями оборудования для майнинга, поэтому можем
+                гарантировать лучшие цены на рынке и оптимальные сроки поставки.
+              </p>
+              <a href="#" class="sell-home__more button button_min button_filled">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="sell-home__products">
+              <ul class="products-sell-home">
+                <li class="products-sell-home__item">
+                  <article class="products-sell-home__card">
+                    <div class="products-sell-home__image-ibg">
+                      <img src="img/home/sells/1.png" alt="product">
+                    </div>
+                    <h3 class="products-sell-home__type title-h3">Майнеры</h3>
+                    <p class="products-sell-home__text text">Подбор и поставка оптимального и эффективного оборудования
+                      с учётом конъюнктуры рынка и сложности сети.</p>
+                  </article>
+                </li>
+                <li class="products-sell-home__item">
+                  <article class="products-sell-home__card">
+                    <div class="products-sell-home__image-ibg">
+                      <img src="img/home/sells/2.png" alt="product">
+                    </div>
+                    <h3 class="products-sell-home__type title-h3">Контейнеры</h3>
+                    <p class="products-sell-home__text text">Мобильное металлическое помещение, внутри которого созданы
+                      условия для работы вычислительного оборудования.</p>
+                  </article>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     @@include('html/_footer.htm',{})
