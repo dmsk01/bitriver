@@ -2,13 +2,42 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&._fw {
-		width: 100%;
-	}
+  display: inline-flex;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: all 0.3s ease 0s;
+  border-radius: 50px;
+  @media (max-width: $mobile) {
+    padding: 8px 17px;
+  }
+  &_filled {
+    background: $accentColor;
+  }
+  &_white {
+    border-color: #fff;
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: $accentColor;
+      }
+    }
+  }
+  &_blue {
+    border-color: $blueColor;
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: $accentColor;
+      }
+    }
+    &:active {
+      background: $accentColorLight;
+    }
+  }
+  &:active {
+    background: $accentColorLight;
+    border-color: $accentColorLight;
+  }
+  &._fw {
+    width: 100%;
+  }
 }

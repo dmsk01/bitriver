@@ -47,6 +47,8 @@ $mainColor: #fff;
 $bgColor: #0b1d2f;
 $accentColor: #53c1b0;
 $accentColorLight: #41e9cc;
+$blueGreyColorDark: #2a435c;
+$blueGreyColor: #59748f;
 $blueColor: #52a6dd;
 $blueColorLight: #b9e3ff;
 $inputError: #fda5a5;
@@ -54,10 +56,14 @@ $textError: #ff4a4a;
 
 // Обнуление и общие параметры ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
 @import "base/null";
-
+html {
+  overflow-x: hidden;
+}
 body {
+  cursor: url("../img/icons/cursor.svg"), auto;
   color: $mainColor;
   background-color: $bgColor;
+  overflow-x: hidden;
 
   // Скролл заблокирован
   .lock & {
@@ -140,8 +146,28 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "gradientHero";
 
 // Основной блок страницы ====================================================================================================
 .page {
   min-width: 0;
+}
+
+.title {
+  &_big {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    line-height: math.div(60, 50);
+    color: $blueColor;
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 24px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 20px;
+    }
+  }
 }

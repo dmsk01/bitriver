@@ -132,7 +132,7 @@
       margin-right: 10px;
     }
     @media (max-width: $tablet) {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       &:not(:last-child) {
         margin-right: 0;
       }
@@ -143,6 +143,16 @@
 
   &__link {
     color: $blueColor;
+    transition: color 0.3s ease 0s;
+    &:hover {
+      color: $blueColorLight;
+    }
+    &:active {
+      color: $accentColor;
+    }
+    @media (max-width: $mobile) {
+      text-transform: uppercase;
+    }
   }
 }
 
