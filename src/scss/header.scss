@@ -1,55 +1,196 @@
 //====================================================================================================
 .header {
+  padding-top: 55px;
+  padding-bottom: 25px;
+  @media (max-width: $tablet) {
+    padding: 25px 0;
+  }
+  // .header__container
+
+  &__container {
+  }
+
+  // .header__row
+
   &__row {
     display: flex;
+    justify-content: space-between;
+  }
+
+  // .header__logo
+
+  &__logo {
+    @media (max-width: $mobile) {
+      img {
+        width: 100px;
+        height: 22px;
+      }
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+  }
+
+  // .header__lang
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    @media (max-width: $tablet) {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+  }
+
+  // .header__select
+
+  &__select {
   }
 }
+.menu {
+  display: flex;
+  align-items: center;
+  max-width: 920px;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (max-width: $tablet) {
+    order: 2;
+    max-width: none;
+    width: auto;
+    padding: 0;
+  }
+  // .menu__icon
+
+  &__icon {
+  }
+
+  // .menu__body
+
+  &__body {
+    width: 100%;
+    @media (max-width: $tablet) {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      z-index: 4;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      background-color: #1f1f21;
+      transition: left 0.3s ease;
+      padding: 100px 20px 30px 20px;
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: inline-block;
+        width: 100%;
+        height: 117px;
+        z-index: 3;
+        transition: left 0.3s ease;
+        background: #1f1f21;
+        @media (max-width: $pc) {
+          height: 96px;
+        }
+        @media (max-width: $mobile) {
+          height: 53px;
+        }
+        @media (max-width: $mobileSmall) {
+          height: 35px;
+        }
+      }
+      .menu-open & {
+        left: 0;
+        &::before {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      justify-content: start;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  // .menu__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+    color: $blueColor;
+  }
+}
+
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-		}
-		&::before {
-			top: 0px;
-		}
-		&::after {
-			bottom: 0px;
-		}
-		span {
-			top: calc(50% - 1px);
-		}
-		.menu-open & {
-			span {
-				transform: scale(0);
-			}
-			&::before {
-				transform: rotate(-45deg);
-				top: calc(50% - 1px);
-			}
-			&::after {
-				transform: rotate(45deg);
-				bottom: calc(50% - 1px);
-			}
-		}
-	}
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $blueColor;
+    }
+    &::before {
+      top: 0px;
+    }
+    &::after {
+      bottom: 0px;
+    }
+    span {
+      top: calc(50% - 1px);
+    }
+    .menu-open & {
+      span {
+        transform: scale(0);
+      }
+      &::before {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+      }
+      &::after {
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+      }
+    }
+  }
 }
-*/
