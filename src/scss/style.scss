@@ -148,10 +148,15 @@ body {
 @import "home";
 @import "gradientHero";
 @import "map";
+@import "equipment";
 
 // Основной блок страницы ====================================================================================================
 .page {
   min-width: 0;
+}
+
+.accent {
+  color: $blueColor;
 }
 
 .visually-hidden {
@@ -213,6 +218,10 @@ body {
   font-weight: 300;
   font-size: 17px;
   line-height: math.div(21, 17);
+  &_small {
+    font-size: 14px;
+    line-height: math.div(17, 14);
+  }
   @media (max-width: $mobileSmall) {
     font-size: 14px;
   }
