@@ -17,8 +17,21 @@
   }
 }
 
-.geo-pointer {
+path[data-hascod="true"] {
   transition: fill 0.3s ease 0s;
+
+  &:hover {
+    fill: #72bdee;
+    cursor: pointer;
+  }
+}
+
+.geo-pointer {
+  outline: none;
+  transition: fill 0.3s ease 0s;
+  &:active {
+    outline: none;
+  }
   &:hover {
     fill: $accentColorLight;
     cursor: pointer;
