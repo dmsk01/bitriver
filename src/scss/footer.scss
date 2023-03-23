@@ -1,3 +1,62 @@
 //====================================================================================================
-
+.footer {
+  padding: 50px 0;
+  @media (max-width: $mobileSmall) {
+    padding: 40px 0;
+  }
+  &__container {
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mobileSmall) {
+      flex-direction: column;
+    }
+  }
+  &__menu {
+    max-width: 430px;
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 30px;
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 20px 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }
+  &__item {
+  }
+  &__link {
+  }
+  &__company {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    @media (max-width: $mobileSmall) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    margin-bottom: 55px;
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    img {
+      width: 197px;
+      height: 42px;
+    }
+  }
+  &__copy {
+    text-align: right;
+  }
+}
 //====================================================================================================
