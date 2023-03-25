@@ -21,7 +21,8 @@
                 <li class="hero-equipment__point text text_small">Актуальное и качественное оборудование</li>
               </ul>
               <div class="hero-equipment__actions">
-                <a href="#" class="hero-equipment__action button button_filled">ПОЛУЧИТЬ ПРАЙС-ЛИСТ</a>
+                <a href="./files/price.pdf" download class="hero-equipment__action button button_filled">ПОЛУЧИТЬ
+                  ПРАЙС-ЛИСТ</a>
                 <a href="#" class="hero-equipment__action button button_blue">ЗАДАТЬ ВОПРОС</a>
               </div>
 
@@ -34,6 +35,109 @@
           </div>
         </div>
       </section>
+
+      <section class="equipment-page__purchase purchase-equipment">
+        <div class="purchase-equipment__container">
+          <div class="purchase-equipment__row">
+            <div class="purchase-equipment__decor">
+              <div class="purchase-equipment__image-ibg">
+                <img src="img/equipment/1.png" alt="equipment">
+              </div>
+            </div>
+            <div class="purchase-equipment__content">
+              <h2 class="purchase-equipment__title">Закупка оборудования напрямую у производителя</h2>
+              <p class="purchase-equipment__text">Мы работаем напрямую с крупнейшими производителями оборудования
+                для майнинга. Благодаря большим объёмам закупок мы можем предложить нашим клиентам привлекательные цены,
+                а также имеем ряд преференций при бронировании оборудования на складе и по предзаказам на новые модели.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__shipping shipping-equipment">
+        <div class="shipping-equipment__container">
+          <div class="shipping-equipment__row">
+            <div class="shipping-equipment__decor">
+              <div class="shipping-equipment__image-ibg">
+                <img src="img/equipment/2.png" alt="equipment">
+              </div>
+            </div>
+            <div class="shipping-equipment__content">
+              <h2 class="shipping-equipment__title">Доставка оборудования по территории России</h2>
+              <p class="shipping-equipment__text">Мы сотрудничаем с крупными логистическими холдингами как российскими,
+                так и международными, а также с небольшими специализированными транспортными компаниями, что позволяет
+                нам оперативно организовать доставку вашего груза любыми видами транспорта, использовать специальные
+                условия и гарантировать сохранность груза. Собственный штат логистов позволяет нам разработать
+                для клиентов индивидуальный маршрут для оптимизации затрат. Служба мониторинга компании отслеживает
+                перевозки на всей протяжённости пути.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__solutions equipment-solutions">
+        <div class="equipment-solutions__container">
+          <div class="equipment-solutions__row">
+            <div class="equipment-solutions__content">
+              <h2 class="equipment-solutions__title">Готовые решения для наших клиентов</h2>
+              <p class="equipment-solutions__text">Подберём оптимальное оборудование, настроим под вас, и вы сразу
+                приступите к майнингу криптовалюты. Заполните форму, чтобы получить услугу по подбору оборудования
+                для майнинга.</p>
+              <p class="equipment-solutions__text">Благодаря многолетнему опыту работы напрямую с производителями
+                оборудования и логистическими компаниями, мы зачастую можем предложить лучшие условия для крупных
+                клиентов.</p>
+            </div>
+            <form class="equipment-solutions__callback callback-form">
+              <div class="callback-form__box">
+                <div class="callback-form__item">
+                  <label class="callback-form__label" for="name">Ваше имя</label>
+                  <input id="name" autocomplete="off" type="text" name="name"
+                    data-error="Поле обязательно для заполнения" placeholder="Введите текст"
+                    class="callback-form__input input" data-validate data-required>
+                </div>
+                <div class="callback-form__item">
+                  <label class="callback-form__label" for="phone">Телефон</label>
+                  <input id="phone" autocomplete="off" type="text" name="phone" data-error="Некорректное значение"
+                    placeholder="+_ (___)-___-__-__" class="callback-form__input input" data-validate data-required>
+                </div>
+                <div class="callback-form__item">
+                  <label class="callback-form__label" for="email">Электронная почта (e-mail)</label>
+                  <input id="email" autocomplete="off" type="text" name="email" data-error="Некорректное значение"
+                    placeholder="yourpost@post.ru" class="callback-form__input input" data-required="email"
+                    data-validate>
+                </div>
+                <div class="callback-form__item callback-form__item_textarea">
+                  <label class="callback-form__label" for="question">Опишите проект, вопросы или требования </label>
+                  <textarea id="question" autocomplete="off" name="question"
+                    data-error="Поле обязательно для заполнения" placeholder="Введите текст"
+                    class="callback-form__input input" data-validate data-required></textarea>
+                </div>
+                <div class="callback-form__item callback-form__item_agreement">
+                  <label class="checkbox">
+                    <input id="agreement" data-error="Необходимо согласие на обработку данных" class="checkbox__input"
+                      type="checkbox" value="1" name="agreement" data-validate data-required>
+                    <span class="checkbox__text">
+                      <div class="checkbox__wrap">
+                        Отправляя данную форму,
+                        вы даёте своё согласие на обработку персональных данных, в соответствии с Федеральным законом
+                        от 27.07.2006 года № 152-ФЗ «О персональных данных», на условиях и для целей, определённых
+                        <a class="checkbox__link" href="#">политикой конфиденциальности</a>.
+                      </div>
+                    </span>
+                  </label>
+                </div>
+                <div class="callback-form__item callback-form__item_button">
+                  <button type="submit" class="callback-form__button button button_filled">ОТПРАВИТЬ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__offer"></section>
+
     </main>
     @@include('html/_footer.htm',{})
   </div>

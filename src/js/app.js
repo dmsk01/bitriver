@@ -52,6 +52,12 @@ flsFunctions.spollers();
 // Для подключения в шаблон раскомментировать
 // flsFunctions.tabs();
 
+import "./libs/inputmask.min.js";
+
+const phoneInput = document.getElementById("phone");
+const im = new Inputmask("+9 (999)-999-99-99");
+im.mask(phoneInput);
+
 // Работа с формами ========================================================================================================================================================================================================================================================
 import * as flsForms from "./files/forms/forms.js";
 
@@ -59,7 +65,7 @@ import * as flsForms from "./files/forms/forms.js";
 flsForms.formFieldsInit();
 
 /* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
-// flsForms.formSubmit(true);
+flsForms.formSubmit(true);
 
 /* Модуль формы "колличество" */
 //flsForms.formQuantity();

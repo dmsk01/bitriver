@@ -39,9 +39,11 @@
       background: $accentColorLight;
     }
   }
+  &:focus,
   &:active {
     background: $accentColorLight;
     border-color: $accentColorLight;
+    outline: none;
   }
   &._fw {
     width: 100%;

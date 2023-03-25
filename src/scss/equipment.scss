@@ -1,6 +1,13 @@
 .hero-equipment {
   padding-top: 140px;
   padding-bottom: 200px;
+  background: url("../img/lines.svg") no-repeat;
+  background-position: left top 38%;
+  background-size: 100%;
+  @media (max-width: $mobile) {
+    background-position: left top 10%;
+  }
+
   @media (max-width: $mobile) {
     padding: 40px 0;
   }
@@ -64,5 +71,237 @@
   }
   &__image-ibg {
     padding-bottom: percent(336, 503);
+  }
+}
+
+.purchase-equipment {
+  padding: 70px 0;
+  background: $blueColor;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+  &__container {
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  &__decor {
+    margin-right: 20px;
+    flex: 0 1 calc(485 / 1150 * 100%);
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+  &__image-ibg {
+    padding-bottom: percent(330, 485);
+  }
+  &__content {
+    flex: 0 1 calc(550 / 1220 * 100%);
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: math.div(45, 40);
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    font-size: 17px;
+    line-height: math.div(26, 17);
+    @media (max-width: $mobile) {
+      font-size: 15px;
+    }
+  }
+}
+
+.shipping-equipment {
+  padding: 70px 0;
+  background: #fff;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+  &__container {
+  }
+  &__row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  &__decor {
+    flex: 0 1 calc(600 / 1220 * 100%);
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+  &__image-ibg {
+    padding-bottom: percent(400, 600);
+  }
+  &__content {
+    flex: 0 1 calc(490 / 1220 * 100%);
+    margin-right: 20px;
+    @media (max-width: $mobile) {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: math.div(45, 40);
+    color: $blueColor;
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    font-size: 17px;
+    line-height: math.div(26, 17);
+    color: $bgColor;
+    @media (max-width: $mobile) {
+      font-size: 15px;
+    }
+  }
+}
+
+.equipment-solutions {
+  padding: 90px 0;
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    flex: 0 1 calc(490 / 1220 * 100%);
+    @media (max-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: math.div(45, 40);
+    color: $blueColor;
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+  &__text {
+    font-size: 17px;
+    line-height: math.div(26, 17);
+    @media (max-width: $mobile) {
+      font-size: 15px;
+    }
+  }
+  &__callback {
+    flex: 0 1 calc(650 / 1220 * 100%);
+  }
+}
+.callback-form {
+  &__box {
+    display: grid;
+    gap: 15px 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 64px 64px 64px 1fr 50px;
+    @media (max-width: $mobile) {
+      gap: 15px;
+    }
+    @media (max-width: $mobileSmall) {
+      display: block;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 20px;
+    }
+
+    & .form__error {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(0px, 100%);
+      color: #ff4a4a;
+    }
+    &_textarea {
+      grid-column: 2/3;
+      grid-row: 1/4;
+      textarea {
+        flex: 1 1 auto;
+        height: 100%;
+      }
+    }
+    &_agreement {
+      grid-column: 1/3;
+      grid-row: 4/5;
+      margin-top: 15px;
+      & .form__error {
+        transform: translate(25px, 100%);
+      }
+    }
+    &_button {
+      grid-column: 1/3;
+      grid-row: 5/6;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 15px;
+    }
+  }
+  &__label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: math.div(17, 14);
+  }
+  &__input {
+    padding: 10px;
+    color: $bgColor;
+    resize: none;
+    transition: border 0.3s ease 0s;
+    &:active,
+    &:focus {
+      outline: 3px solid $accentColor;
+    }
+    &._error {
+      background-color: #fda5a5;
+    }
+  }
+  &__button {
+  }
+}
+
+.checkbox {
+  &__input {
+  }
+  &__label {
+  }
+  &__text {
   }
 }
