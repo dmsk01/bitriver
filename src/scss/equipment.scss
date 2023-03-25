@@ -264,6 +264,9 @@
       margin-top: 15px;
       & .form__error {
         transform: translate(25px, 100%);
+        @media (max-width: $mobileSmall) {
+          transform: translate(0px, 100%);
+        }
       }
     }
     &_button {
@@ -297,11 +300,88 @@
   }
 }
 
-.checkbox {
-  &__input {
+.equipment-offer {
+  padding: 60px 0;
+  background: #fff;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
   }
-  &__label {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    flex: 0 1 calc(470 / 1180 * 100%);
+    margin-right: 20px;
+    color: $bgColor;
+    @media (max-width: $mobile) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: math.div(52, 40);
+    font-weight: 700;
+    color: $blueColor;
+    @media (max-width: $mobileSmall) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
   &__text {
+    &:nth-child(2) {
+      margin-bottom: 30px;
+      @media (max-width: $mobileSmall) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__list {
+    margin-bottom: 30px;
+    padding-left: 15px;
+  }
+  &__item {
+    list-style: disc;
+    &::marker {
+      font-size: 12px;
+    }
+  }
+  &__action {
+  }
+  &__start {
+    padding: 60px 45px;
+    background: $blueColor;
+    flex: 0 1 calc(560 / 1180 * 100%);
+    text-align: center;
+    @media (max-width: $mobile) {
+      padding: 20px;
+    }
+  }
+  &__image-ibg {
+    padding-bottom: percent(500, 670);
+  }
+  &__subtitle {
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: math.div(40, 40);
+    font-weight: 700;
+    color: #fff;
+    @media (max-width: $mobileSmall) {
+      font-size: 24px;
+    }
+  }
+  &__desc {
+    font-size: 20px;
+    line-height: math.div(26, 20);
+    color: #fff;
+    @media (max-width: $mobileSmall) {
+      font-size: 16px;
+    }
   }
 }
