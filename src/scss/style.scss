@@ -272,3 +272,56 @@ body {
     outline: none;
   }
 }
+
+// Popup element
+
+.unavailable-region {
+  background-color: $blueColor;
+  padding: 60px 80px;
+  @media (max-width: $mobileSmall) {
+    padding: 40px 10px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: math.div(45, 40);
+    @media (max-width: $mobileSmall) {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__input {
+    flex: 0 1 320px;
+    padding: 10px;
+    color: $bgColor;
+    resize: none;
+    margin-right: 20px;
+    transition: border 0.3s ease 0s;
+    &:active,
+    &:focus {
+      outline: 3px solid $accentColor;
+    }
+    &._error {
+      background-color: #fda5a5;
+    }
+  }
+  &__send {
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 293px;
+    img {
+      max-width: 100%;
+    }
+  }
+}

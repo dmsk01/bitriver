@@ -23,7 +23,9 @@
               <div class="hero-equipment__actions">
                 <a href="./files/price.pdf" download class="hero-equipment__action button button_filled">ПОЛУЧИТЬ
                   ПРАЙС-ЛИСТ</a>
-                <a href="#" class="hero-equipment__action button button_blue">ЗАДАТЬ ВОПРОС</a>
+                <button type="button" data-popup="#unavailable-region"
+                  class="hero-equipment__action button button_blue">ЗАДАТЬ
+                  ВОПРОС</button>
               </div>
 
             </div>
@@ -175,7 +177,7 @@
     </main>
     @@include('html/_footer.htm',{})
   </div>
-  <!-- @@include('html/_popup.htm',{}) -->
+  @@include('html/_popup.htm',{})
   @@include('html/_js.htm',{})
 </body>
 

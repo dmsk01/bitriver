@@ -5,11 +5,24 @@
 		</div>
 	</div>
 </div>
-<div class="hystmodal" id="massageName" aria-hidden="true">
+<div class="hystmodal" id="unavailable-region" aria-hidden="true">
 	<div class="hystmodal__wrap">
 		<div class="hystmodal__window" role="dialog" aria-modal="true">
 			<button data-hystclose class="hystmodal__close">Закрыть</button>
-			Сообщение
+			<div class="unavailable-region">
+				<h2 class="unavailable-region__title">Unfortunately, we can’t work with USA residents</h2>
+				<p class="unavailable-region__text text text_big">Pay attention! BitRiver is not currently available to US-based
+					customers due
+					to the sanctions imposed by the US Treasury Department. Please enter your e-mail below if you would like to
+					receive updates about this and other news.</p>
+				<form class="unavailable-region__form">
+					<input type="text" placeholder="e-mail" class="unavailable-region__input" data-validate data-required />
+					<button type="submit" class="unavailable-region__send button button_white">send</button>
+				</form>
+				<div class="unavailable-region__map">
+					<img src="img/modal/map.png" alt="map">
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
