@@ -15,6 +15,18 @@
   }
   &__inner {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_reverse {
+      flex-direction: row-reverse;
+      .hero-equipment__content {
+        margin-right: 0;
+        margin-left: 20px;
+        @media (max-width: $mobile) {
+          margin-left: 0;
+        }
+      }
+    }
     @media (max-width: $mobile) {
       flex-direction: column;
     }
@@ -68,6 +80,10 @@
   }
   &__decor {
     flex: 0 1 calc(500 / 1130 * 100%);
+    @media (max-width: $mobile) {
+      flex: 1 1 100%;
+      width: 100%;
+    }
   }
   &__image-ibg {
     padding-bottom: percent(336, 503);
@@ -77,6 +93,9 @@
 .purchase-equipment {
   padding: 70px 0;
   background: $blueColor;
+  &_dark {
+    background: $bgColor;
+  }
   @media (max-width: $mobile) {
     padding: 40px 0;
   }
@@ -85,6 +104,10 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    &_reverse {
+      flex-direction: row-reverse;
+    }
     @media (max-width: $mobile) {
       flex-direction: column;
     }
@@ -95,6 +118,7 @@
     @media (max-width: $mobile) {
       margin-bottom: 30px;
       margin-right: 0;
+      width: 100%;
     }
   }
   &__image-ibg {

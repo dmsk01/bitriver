@@ -1,0 +1,29 @@
+.hosting-page {
+  &__map {
+  }
+}
+
+.solution-hosting {
+  padding: 80px 0 100px;
+  background: url("../img/callback-form.png"), no-repeat;
+  background-size: cover;
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: math.div(54, 40);
+    font-weight: 700;
+    text-align: center;
+    color: $blueColor;
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+  &__callback {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}

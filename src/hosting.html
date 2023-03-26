@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Хостинг" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page hosting-page">
+      <section class="hosting-page__hero hero-equipment">
+        <div class="hero-equipment__container">
+          <div class="hero-equipment__inner hero-equipment__inner_reverse">
+            <div class="hero-equipment__content">
+              <h1 class="hero-equipment__title"><span class="accent">Размещение оборудования</span> для майнинга
+              </h1>
+              <h2 class="hero-equipment__subtitle"><span class="accent">в дата-центрах</span> BitRiver</h2>
+              <ul class="hero-equipment__pros">
+                <li class="hero-equipment__point text text_small"><span class="accent">9</span> собственных действующих
+                  ЦОДов</li>
+                <li class="hero-equipment__point text text_small">более <span class="accent">300 МВт</span> общая
+                  мощность дата-центров</li>
+                <li class="hero-equipment__point text text_small"><span class="accent">500</span> сотрудников</li>
+                <li class="hero-equipment__point text text_small"><span class="accent">100 тыс.</span> оборудования уже
+                  размещено</li>
+              </ul>
+              <div class="hero-equipment__actions">
+                <a href="./files/price.pdf" download class="hero-equipment__action button button_filled">ПОЛУЧИТЬ
+                  ПРАЙС-ЛИСТ</a>
+                <button type="button" data-popup="#unavailable-region"
+                  class="hero-equipment__action button button_blue">ЗАДАТЬ
+                  ВОПРОС</button>
+              </div>
+
+            </div>
+            <div class="hero-equipment__decor">
+              <div class="hero-equipment__image-ibg">
+                <img src="img/hosting/hero.png" alt="server">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hosting-page__hosting hosting-home">
+        <div class="hosting-home__container">
+          <div class="hosting-home__inner">
+            <h2 class="hosting-home__title title-h2">Расположение</h2>
+            <p class="hosting-home__info text">При отсутствии хостинга в регионе есть возможность заказать полный
+              комплект оборудования с доставкой и настройкой.</p>
+          </div>
+        </div>
+        <div class="hosting-home__map">
+          @@include('html/_map.htm',{})
+        </div>
+      </section>
+
+      <section class="equipment-page__purchase purchase-equipment">
+        <div class="purchase-equipment__container">
+          <div class="purchase-equipment__row">
+            <div class="purchase-equipment__decor">
+              <div class="purchase-equipment__image-ibg">
+                <img src="img/hosting/1.png" alt="equipment">
+              </div>
+            </div>
+            <div class="purchase-equipment__content">
+              <h2 class="purchase-equipment__title">Высокотехнологичные<br> дата-центры</h2>
+              <p class="purchase-equipment__text">
+                ЦОДы BitRiver как правило находятся в энергоизбыточных регионах России, включая Иркутскую область,
+                Красноярский край, Республику Бурятия и Ямало-Ненецкий автономный округ. Реализовано несколько проектов
+                на попутном нефтяном газе (ПНГ) совместно с ведущими нефтяными компаниями России.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__shipping shipping-equipment">
+        <div class="shipping-equipment__container">
+          <div class="shipping-equipment__row">
+            <div class="shipping-equipment__decor">
+              <div class="shipping-equipment__image-ibg">
+                <img src="img/hosting/2.png" alt="equipment">
+              </div>
+            </div>
+            <div class="shipping-equipment__content">
+              <h2 class="shipping-equipment__title">Низкие тарифы на электроэнергию</h2>
+              <p class="shipping-equipment__text">Энергоемкость ЦОДов позволяет задействовать крупные энергетические
+                мощности, что снижает стоимость электроэнергии и позволяет майнить в промышленных масштабах. Мы
+                используем только избыточную «зеленую» электроэнергию. Оборудование клиентов напрямую подключается к
+                узловой подстанции.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__purchase purchase-equipment">
+        <div class="purchase-equipment__container">
+          <div class="purchase-equipment__row">
+            <div class="purchase-equipment__decor">
+              <div class="purchase-equipment__image-ibg">
+                <img src="img/hosting/3.png" alt="equipment">
+              </div>
+            </div>
+            <div class="purchase-equipment__content">
+              <h2 class="purchase-equipment__title">Надёжность и безопасность</h2>
+              <p class="purchase-equipment__text">
+                Мы применяем широкий спектр мер по охране и обеспечению безопасности на объекте от круглосуточного
+                видеонаблюдения до постов вооружённой охраны. Доступ строго ограничен для посторонних лиц.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__purchase purchase-equipment purchase-equipment_dark">
+        <div class="purchase-equipment__container">
+          <div class="purchase-equipment__row">
+            <div class="purchase-equipment__decor">
+              <div class="purchase-equipment__image-ibg">
+                <img src="img/hosting/4.png" alt="equipment">
+              </div>
+            </div>
+            <div class="purchase-equipment__content">
+              <h2 class="purchase-equipment__title">Гарантируем uptime 98%</h2>
+              <p class="purchase-equipment__text">
+                У нас максимальная сетевая доступность и бесперебойное электроснабжение. Используем для подключения к
+                Интернету 2 оптоволоконных канала и 1 беспроводной.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__shipping shipping-equipment">
+        <div class="shipping-equipment__container">
+          <div class="shipping-equipment__row">
+            <div class="shipping-equipment__decor">
+              <div class="shipping-equipment__image-ibg">
+                <img src="img/hosting/5.png" alt="equipment">
+              </div>
+            </div>
+            <div class="shipping-equipment__content">
+              <h2 class="shipping-equipment__title">Эффективная система охлаждения</h2>
+              <p class="shipping-equipment__text">Мы применяем эффективные системы охлаждения: прямое охлаждение direct
+                cooling, адиабатическое охлаждение, а также иммерсионный метод охлаждения.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__purchase purchase-equipment">
+        <div class="purchase-equipment__container">
+          <div class="purchase-equipment__row">
+            <div class="purchase-equipment__decor">
+              <div class="purchase-equipment__image-ibg">
+                <img src="img/hosting/6.png" alt="equipment">
+              </div>
+            </div>
+            <div class="purchase-equipment__content">
+              <h2 class="purchase-equipment__title">Собственный центр ремонта оборудования</h2>
+              <p class="purchase-equipment__text">
+                У нас есть необходимый запас деталей и сертифицированные специалисты, подготовленные в Bitmain, Micro BT
+                и Innosilicon, чтобы произвести ремонт оборудования на месте в короткие сроки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__purchase purchase-equipment purchase-equipment_dark">
+        <div class="purchase-equipment__container">
+          <div class="purchase-equipment__row purchase-equipment__row_reverse">
+            <div class="purchase-equipment__decor">
+              <div class="purchase-equipment__image-ibg">
+                <img src="img/hosting/7.png" alt="equipment">
+              </div>
+            </div>
+            <div class="purchase-equipment__content">
+              <h2 class="purchase-equipment__title">Индивидуальный учет электричества</h2>
+              <p class="purchase-equipment__text">
+                У нас максимальная сетевая доступность и бесперебойное электроснабжение. Используем для подключения к
+                Интернету 2 оптоволоконных канала и 1 беспроводной.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment-page__shipping shipping-equipment">
+        <div class="shipping-equipment__container">
+          <div class="shipping-equipment__row">
+            <div class="shipping-equipment__decor">
+              <div class="shipping-equipment__image-ibg">
+                <img src="img/hosting/8.png" alt="equipment">
+              </div>
+            </div>
+            <div class="shipping-equipment__content">
+              <h2 class="shipping-equipment__title">Круглосуточный мониторинг оборудования</h2>
+              <p class="shipping-equipment__text">Для мониторинга работы оборудования используем несколько программных
+                комплексов. Также мы предоставляем онлайн-доступ к устройствам, чтобы клиенты осуществляли контроль за
+                работой и настройками своего оборудования в режиме реального времени.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hosting-page__solution solution-hosting">
+        <div class="solution-hosting__container">
+          <h2 class="solution-hosting__title">Подберём нужное Вам решение</h2>
+          <form class="solution-hosting__callback callback-form">
+            <div class="callback-form__box">
+              <div class="callback-form__item">
+                <label class="callback-form__label" for="name">Ваше имя</label>
+                <input id="name" autocomplete="off" type="text" name="name" data-error="Поле обязательно для заполнения"
+                  placeholder="Введите текст" class="callback-form__input input" data-validate data-required>
+              </div>
+              <div class="callback-form__item">
+                <label class="callback-form__label" for="phone">Телефон</label>
+                <input id="phone" autocomplete="off" type="text" name="phone" data-error="Некорректное значение"
+                  placeholder="+_ (___)-___-__-__" class="callback-form__input input" data-validate data-required>
+              </div>
+              <div class="callback-form__item">
+                <label class="callback-form__label" for="email">Электронная почта (e-mail)</label>
+                <input id="email" autocomplete="off" type="text" name="email" data-error="Некорректное значение"
+                  placeholder="yourpost@post.ru" class="callback-form__input input" data-required="email" data-validate>
+              </div>
+              <div class="callback-form__item callback-form__item_textarea">
+                <label class="callback-form__label" for="question">Опишите проект, вопросы или требования </label>
+                <textarea id="question" autocomplete="off" name="question" data-error="Поле обязательно для заполнения"
+                  placeholder="Введите текст" class="callback-form__input input" data-validate data-required></textarea>
+              </div>
+              <div class="callback-form__item callback-form__item_agreement">
+                <label class="checkbox">
+                  <input id="agreement" data-error="Необходимо согласие на обработку данных" class="checkbox__input"
+                    type="checkbox" value="1" name="agreement" data-validate data-required>
+                  <span class="checkbox__text">
+                    <div class="checkbox__wrap">
+                      Отправляя данную форму,
+                      вы даёте своё согласие на обработку персональных данных, в соответствии с Федеральным законом
+                      от 27.07.2006 года № 152-ФЗ «О персональных данных», на условиях и для целей, определённых
+                      <a class="checkbox__link" href="#">политикой конфиденциальности</a>.
+                    </div>
+                  </span>
+                </label>
+              </div>
+              <div class="callback-form__item callback-form__item_button">
+                <button type="submit" class="callback-form__button button button_filled">ОТПРАВИТЬ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
