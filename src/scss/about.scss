@@ -13,7 +13,6 @@
     flex-direction: column;
     & > * {
       flex: 1 1 100%;
-      height: 100%;
       max-width: none;
       width: 100%;
     }
@@ -70,9 +69,12 @@
   &__item {
     padding: 0 20px;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__content {
+    flex: 1 1 auto;
     max-width: 550px;
     min-height: 100%;
     display: flex;
@@ -91,6 +93,10 @@
     height: 100%;
     &:not(:last-child) {
       margin-bottom: 15px;
+    }
+    &_last {
+      flex-grow: 1;
+      min-height: 100%;
     }
   }
   &__image-ibg {
