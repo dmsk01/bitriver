@@ -146,11 +146,13 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "lines";
 @import "gradientHero";
 @import "map";
 @import "equipment";
 @import "map";
 @import "hosting";
+@import "about";
 
 // Основной блок страницы ====================================================================================================
 .page {
@@ -197,14 +199,21 @@ body {
   font-size: 52px;
   line-height: 1;
   font-weight: 700;
-  &_blue {
-    color: $blueColor;
-  }
   @media (max-width: $mobile) {
     font-size: 40px;
   }
   @media (max-width: $mobileSmall) {
     font-size: 24px;
+  }
+  &_blue {
+    color: $blueColor;
+  }
+  &_small {
+    font-size: 40px;
+    line-height: math.div(45, 40);
+    @media (max-width: $tablet) {
+      font-size: 24px;
+    }
   }
 }
 .title-h3 {
@@ -220,6 +229,15 @@ body {
   font-weight: 300;
   font-size: 17px;
   line-height: math.div(21, 17);
+  &_dark {
+    color: $bgColor;
+  }
+
+  &_bold {
+    line-height: math.div(26, 17);
+    font-weight: 700;
+  }
+
   &_small {
     font-size: 14px;
     line-height: math.div(17, 14);

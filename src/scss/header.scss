@@ -152,6 +152,9 @@
     &:active {
       color: $accentColor;
     }
+    &.active {
+      color: $accentColor;
+    }
     @media (max-width: $mobile) {
       text-transform: uppercase;
     }

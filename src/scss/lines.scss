@@ -1,0 +1,29 @@
+#lines {
+  position: relative;
+  width: 100vw;
+  background: transparent;
+  @media (min-width: 1400px) {
+    transform: scale(2);
+  }
+  @media (min-width: 1920px) {
+    transform: scale(3.5);
+  }
+}
+
+#lines g {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  animation: wave 10s linear infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-3%, 0);
+  }
+
+  100% {
+    transform: translate(3%, 0);
+  }
+}
